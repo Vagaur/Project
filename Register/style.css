@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+}
+
+.nav-bar{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    color: #C5C6C7;
+    background-color: rgba(0,0,0,0.4);
+    animation: nav 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+    0% {
+        opacity: 0;
+        box-shadow: none;
+    } 90%{
+        box-shadow: 0 0 10px #C5C6C7;
+    }
+     100% {
+        opacity: 1;
+        box-shadow: 0 1px 10px #C5C6C7;
+    }
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo p{
+    display: flex;
+    font-size: 2.6vh;
+}
+
+.nav-logo p:hover {
+    color: #45A29E;
+    cursor:default;
+    text-shadow: 0 1px 10px #45A29E;
+}
+
+.logo{
+    padding: 1vw;
+    width: 4vh;
+    height: 4vh;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    margin: 1vw;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    color: #c5c6c7;
+    letter-spacing: 0.5px;
+    font-size: 2.5vh;
+    padding: 0.5vh;
+}
+
+.menu a::after{
+    content: "";
+    position: absolute;
+    background-color: #66fcf1;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+.menu a:hover{
+    color: white;
+    text-shadow: 0 0 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    height: 88vh;
+    width: 100%;
+}
+
+.form {
+    position: relative;
+    background-color: rgba(0,0,0,0.25);
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    animation: form 2.25s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes form {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+.form label {
+    position: relative;
+    display: flex;
+    color: #C5C6C7;
+    font-family: sans-serif;
+    font-size: 2.25vh;
+}
+
+.form input {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2833;
+    font-family: sans-serif;
+    margin: 0.8vh;
+    border: rgba(0,0,0,0.5) 0.1vh solid;
+    border-radius: 0.6rem;
+}
+
+.form:hover {
+    height: 60.2vh;
+    width: 30.2vw;
+    border: 1px solid #C5C6C7;
+    box-shadow: 0px 0px 8px #45A29E;
+}
+
+#fname,#lname,#email {
+    height: 4vh;
+    width: 100%;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4.5vw;
+    border: none;
+    text-transform: uppercase;
+    font-family: consolas;
+    align-content: center;
+    overflow: hidden;
+    font-size: 1.5vw;
+    color: white;
+    background-color: rgb(40, 255, 40);
+    height: 6vh;
+    width: 9vw;
+    animation: border 1s ease-in 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border {
+    0% {
+        border-radius: 0;
+    }100% {
+        border-radius: 0.65rem;
+    }
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(40, 255, 40), 0 0 40px rgb(40, 255, 40), 0 0 80px rgb(40, 255, 40);
+    transition-delay: 0.2s;
+}
+
+input:hover {
+    box-shadow: 0px 0px 5px #C5C6C7;
+}
+
+footer{
+    background-color: rgba(0,0,0,0);
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C5C6C7;
+    font-size: 2.6vh;
+    animation: footer 2.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes footer {
+    0%{
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
